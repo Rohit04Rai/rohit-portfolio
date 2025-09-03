@@ -58,23 +58,32 @@ export default function App() {
       </header>
 
       {/* About Section */}
-      <section id="about" className="p-10">
-        <h2 className="text-3xl font-bold mb-4">About Me</h2>
-        <p className="text-gray-300 max-w-2xl">
-          I’m a <span className="text-blue-400">Business Analyst</span> and an
-          aspiring
-          <span className="text-blue-400"> Web Developer</span> passionate about
-          building interactive and responsive websites. I specialize in creating
-          dashboards and data-driven solutions using modern technologies like
-          React, Tailwind CSS, Node.js, and analytics tools.
-          <br />
-          <br />
-          By combining <span className="text-blue-400">
-            business insights
-          </span>{" "}
-          with clean, scalable code, I aim to deliver user-friendly and
-          business-focused results for every project.
-        </p>
+      <section
+        id="about"
+        className="p-10 flex flex-col md:flex-row items-center gap-8"
+      >
+        <img
+          src="/rohit.jpg"
+          alt="Rohit Kumar Rai"
+          className="w-48 h-48 rounded-full border-4 border-blue-500 shadow-lg"
+        />
+        <div>
+          <h2 className="text-3xl font-bold mb-4">About Me</h2>
+          <p className="text-gray-300 max-w-2xl">
+            I’m a <span className="text-blue-400">Business Analyst</span> and an
+            aspiring
+            <span className="text-blue-400"> Web Developer</span> passionate
+            about building interactive and responsive websites. I specialize in
+            creating dashboards and data-driven solutions using modern
+            technologies like React, Tailwind CSS, Node.js, and analytics tools.
+            <br />
+            <br />
+            By combining{" "}
+            <span className="text-blue-400">business insights</span> with clean,
+            scalable code, I aim to deliver user-friendly and business-focused
+            results for every project.
+          </p>
+        </div>
       </section>
 
       {/* Skills Section */}
