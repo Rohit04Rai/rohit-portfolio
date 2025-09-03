@@ -26,7 +26,27 @@ export default function App() {
       <header className="flex flex-col items-center justify-center text-center py-20">
         <h2 className="text-4xl font-bold">Hi, I'm Rohit 👋</h2>
         <p className="mt-4 text-lg text-gray-300">
-          Web Developer | React | Node.js | Tailwind CSS
+          Business Analyst | Web Developer | React | Node.js | Tailwind CSS
+          </p>
+        <div className="flex gap-6">
+          <a
+            href="https://github.com/Rohit04Rai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-lg transition"
+          >
+            <FaGithub size={22} /> GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/rohit-kumar-rai-04dec"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-lg transition"
+          >
+            <FaLinkedin size={22} /> LinkedIn
+          </a>
+        </div>
+      </section>
         </p>
         <a
           href="/resume.pdf" // apna resume public folder me upload karna
@@ -119,34 +139,24 @@ export default function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="p-10 bg-gray-800 text-center">
+      <section id="contact" className="px-8 py-20 text-center">
         <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
-        <p className="text-gray-300">📧 Email: er.rohitrai87@gmail.com</p>
-        <p className="text-gray-300">
-          🔗 LinkedIn:{" "}
-          <a
-            href="https://linkedin.com/in/rohit-kumar-rai-04dec"
-            target="_blank"
-            className="text-blue-400 hover:underline"
-          >
-            linkedin.com/in/rohit
-          </a>
+        <p className="text-gray-300 mb-6">
+          Feel free to reach out for collaborations or opportunities.
         </p>
-        <p className="text-gray-300">
-          💻 GitHub:{" "}
-          <a
-            href="https://github.com/Rohit04Rai"
-            target="_blank"
-            className="text-blue-400 hover:underline"
-          >
-            github.com/Rohit04Rai
-          </a>
-        </p>
+        <a
+          href="mailto:er.rohitrai87@gmail.com.com"
+          className="flex items-center gap-2 justify-center bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-lg transition mx-auto w-max"
+        >
+          <FaEnvelope size={20} /> Email Me
+        </a>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 p-4 text-center text-gray-500">
-        © 2025 Rohit Kumar Rai | All Rights Reserved
+      <footer className="bg-gray-800 text-center py-4 mt-10">
+        <p className="text-gray-400 text-sm">
+          © {new Date().getFullYear()} Rohit Kumar Rai. All rights reserved.
+        </p>
       </footer>
     </div>
   );
