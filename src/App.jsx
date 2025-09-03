@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function App() {
   return (
@@ -27,8 +28,8 @@ export default function App() {
         <h2 className="text-4xl font-bold">Hi, I'm Rohit 👋</h2>
         <p className="mt-4 text-lg text-gray-300">
           Business Analyst | Web Developer | React | Node.js | Tailwind CSS
-          </p>
-        <div className="flex gap-6">
+        </p>
+        <div className="flex gap-6 mt-6">
           <a
             href="https://github.com/Rohit04Rai"
             target="_blank"
@@ -46,8 +47,7 @@ export default function App() {
             <FaLinkedin size={22} /> LinkedIn
           </a>
         </div>
-      </section>
-        </p>
+
         <a
           href="/resume.pdf" // apna resume public folder me upload karna
           download
@@ -61,9 +61,19 @@ export default function App() {
       <section id="about" className="p-10">
         <h2 className="text-3xl font-bold mb-4">About Me</h2>
         <p className="text-gray-300 max-w-2xl">
-          I am a passionate Web Developer skilled in modern technologies like
-          React, Tailwind CSS, and Node.js. I love building user-friendly,
-          responsive, and scalable web applications.
+          I’m a <span className="text-blue-400">Business Analyst</span> and an
+          aspiring
+          <span className="text-blue-400"> Web Developer</span> passionate about
+          building interactive and responsive websites. I specialize in creating
+          dashboards and data-driven solutions using modern technologies like
+          React, Tailwind CSS, Node.js, and analytics tools.
+          <br />
+          <br />
+          By combining <span className="text-blue-400">
+            business insights
+          </span>{" "}
+          with clean, scalable code, I aim to deliver user-friendly and
+          business-focused results for every project.
         </p>
       </section>
 
@@ -71,6 +81,9 @@ export default function App() {
       <section id="skills" className="p-10 bg-gray-800">
         <h2 className="text-3xl font-bold mb-6">Skills</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="bg-gray-700 p-4 rounded-lg">
+            📊 Business Analytics
+          </div>
           <div className="bg-gray-700 p-4 rounded-lg">⚛️ React</div>
           <div className="bg-gray-700 p-4 rounded-lg">🎨 Tailwind CSS</div>
           <div className="bg-gray-700 p-4 rounded-lg">🟢 Node.js</div>
@@ -145,7 +158,7 @@ export default function App() {
           Feel free to reach out for collaborations or opportunities.
         </p>
         <a
-          href="mailto:er.rohitrai87@gmail.com.com"
+          href="mailto:er.rohitrai87@gmail.com"
           className="flex items-center gap-2 justify-center bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-lg transition mx-auto w-max"
         >
           <FaEnvelope size={20} /> Email Me
